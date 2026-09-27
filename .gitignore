@@ -1,0 +1,116 @@
+# ==========================================
+# Java 编译文件
+# ==========================================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# ==========================================
+# Maven
+# ==========================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.flattened-pom.xml
+
+# 保留 Maven Wrapper
+!.mvn/wrapper/maven-wrapper.jar
+
+# ==========================================
+# Gradle（如果项目使用 Gradle）
+# ==========================================
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ==========================================
+# IntelliJ IDEA
+# ==========================================
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# ==========================================
+# Eclipse
+# ==========================================
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# ==========================================
+# Visual Studio Code
+# ==========================================
+.vscode/
+
+# ==========================================
+# 日志文件
+# ==========================================
+*.log
+logs/
+log/
+
+# ==========================================
+# 操作系统产生的文件
+# ==========================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==========================================
+# 本地环境变量与敏感配置
+# ==========================================
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# 本地专用配置（按需使用）
+application-local.yml
+application-local.yaml
+application-local.properties
+application-dev-local.yml
+application-dev-local.yaml
+application-dev-local.properties
+
+# ==========================================
+# 临时文件与备份文件
+# ==========================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+*.orig
+
+# ==========================================
+# 测试与覆盖率报告
+# ==========================================
+coverage/
+.jacoco/
+jacoco.exec
+
+# ==========================================
+# 本地数据库及运行数据（按需使用）
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==========================================
+# Spring Boot 构建输出
+# ==========================================
+/application.pid
