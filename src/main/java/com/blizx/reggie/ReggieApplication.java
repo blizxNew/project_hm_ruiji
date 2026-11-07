@@ -1,5 +1,5 @@
 // 声明当前类所属的包，用于组织项目中的 Java 类。
-package com.blizx;
+package com.blizx.reggie;
 
 // 导入 Lombok 的日志注解，自动生成名为 log 的日志对象。
 import lombok.extern.slf4j.Slf4j;

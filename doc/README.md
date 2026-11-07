@@ -95,11 +95,11 @@ P6
 
 **4 简单的启动类**
 
-路径为src/main/java/com/blizx/ReggieApplication.java
+路径为src/main/java/com/blizx/reggie/ReggieApplication.java
 
 ```java
 // 声明当前类所属的包，用于组织项目中的 Java 类。
-package com.blizx;
+package com.blizx.reggie;
 
 // 导入 Lombok 的日志注解，自动生成名为 log 的日志对象。
 import lombok.extern.slf4j.Slf4j;
@@ -119,5 +119,6 @@ public class ReggieApplication {
     log.info("项目启动成功");
   }
 }
+
 ```
 
