@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <!-- Maven 项目模型版本。 -->
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- 继承 Spring Boot 父配置，复用其依赖版本管理和默认构建设置。 -->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.4.5</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+
+  <!-- 项目坐标：groupId、artifactId 和 version 共同标识此 Maven 项目。 -->
+  <groupId>com.blizx</groupId>
+  <artifactId>blizx_take_out</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <!-- 项目级属性；Spring Boot 父配置据此选择 Java 编译版本。 -->
+  <properties>
+    <java.version>1.8</java.version>
+  </properties>
+  <!-- 应用运行和测试所需的依赖。 -->
+  <dependencies>
+
+    <!-- Spring Boot 基础启动依赖，提供核心自动配置和应用启动支持。 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+
+    <!-- Spring Boot 测试依赖，提供测试框架及相关测试支持。 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Spring MVC、内嵌服务器等 Web 应用开发和 HTTP 接口支持。 -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <scope>compile</scope>
+    </dependency>
+
+    <!-- MyBatis-Plus 与 Spring Boot 集成，支持数据库访问和增强型 CRUD 操作。 -->
+    <dependency>
+      <groupId>com.baomidou</groupId>
+      <artifactId>mybatis-plus-boot-starter</artifactId>
+      <version>3.4.2</version>
+    </dependency>
+
+    <!-- Lombok 注解处理器，用于编译时生成 getter、setter 等样板代码。 -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.20</version>
+    </dependency>
+
+    <!-- Fastjson JSON 处理库，用于 Java 对象与 JSON 数据之间的转换。 -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.76</version>
+    </dependency>
+
+    <!-- Apache Commons Lang 通用工具库，补充字符串、对象等常用操作。 -->
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>2.6</version>
+    </dependency>
+
+    <!-- MySQL JDBC 驱动，仅运行应用连接 MySQL 数据库时需要。 -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
+    <!-- Druid 数据源及 Spring Boot 集成，提供数据库连接池和监控支持。 -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid-spring-boot-starter</artifactId>
+      <version>1.1.23</version>
+    </dependency>
+
+  </dependencies>
+
+  <!-- Maven 构建插件配置。 -->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <!-- 提供 Spring Boot 应用打包和运行相关目标。 -->
+        <version>2.4.5</version>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
